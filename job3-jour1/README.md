@@ -35,3 +35,48 @@ La capture d'écran montre le jeu Super Mario en cours d'exécution dans le navi
 
 
 ![alt text](image-Docker/image4.png)
+
+
+### 6. Arrêt du conteneur
+
+Il est important d'arrêter le conteneur avant de le supprimer.
+
+**Méthode 1 : Terminal**
+
+1.  Utilisez la commande `docker ps` pour lister les conteneurs en cours d'exécution et trouver l'ID du conteneur Super Mario.
+
+    ```
+    docker ps
+    ```
+
+    *Explication :* Cette commande affiche une liste de tous les conteneurs en cours d'exécution, y compris leur ID, leur nom, l'image utilisée, et les ports exposés.
+
+    
+
+2.  Utilisez la commande `docker stop <ID_du_conteneur>` pour arrêter le conteneur. Remplacez `<ID_du_conteneur>` par l'ID réel du conteneur.
+
+    ```
+    docker stop <ID_du_conteneur>
+    ```
+
+    *Explication :* Cette commande envoie un signal d'arrêt au conteneur spécifié, lui demandant de s'arrêter proprement.
+
+    
+
+**Méthode 2 : Docker Desktop**
+
+1.  Dans la section "Containers/Apps", sélectionnez le conteneur Super Mario.
+2.  Cliquez sur le bouton "Stop".
+
+    *Explication :* Docker Desktop offre une interface graphique pour gérer les conteneurs. Le bouton "Stop" envoie le même signal d'arrêt que la commande `docker stop`.
+
+    
+### 7. Suppression du conteneur
+
+Une fois le conteneur arrêté, vous pouvez le supprimer.
+
+**Méthode 1 : Terminal**
+
+Utilisez la commande `docker rm <ID_du_conteneur>` pour supprimer le conteneur. Remplacez `<ID_du_conteneur>` par l'ID réel du conteneur.
+
+![alt text](image-Docker/image5.png)
