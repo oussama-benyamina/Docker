@@ -2,13 +2,13 @@
  <!-- Tester les commandes de base dans le terminal  -->
 
 
-![alt text](job1-jour1/image-Docker/image1.png)
+![alt text](image-Docker/image1.png)
 
-![alt text](job1-jour1/image-Docker/image2.png)
+![alt text](image-Docker/image2.png)
 
-![alt text](job1-jour1/image-Docker/image3.png)
+![alt text](image-Docker/image3.png)
 
-![alt text](job1-jour1/image-Docker/image4.png)
+![alt text](image-Docker/image4.png)
 
 ### `docker info`
 
@@ -68,7 +68,7 @@ Pour utiliser cette commande, vous devez remplacer `<container_id>` par l'ID ré
 
 <!-- Récupérer l’image Docker -->
 
-![alt text](job1-jour1/image-Docker/image5.png)
+![alt text](image-Docker/image5.png)
 
 
 ### `docker pull linux` (Tentative initiale)
@@ -131,7 +131,7 @@ La sortie de la commande `docker images` montre maintenant deux images : `hello-
 
 <!-- Construisez le container Docker -->
 
-![alt text](job1-jour1/image-Docker/image6.png)
+![alt text](image-Docker/image6.png)
 
 
 ### `docker run -it --rm -p xxxx:80 "nom de l'image"` (Commande de base)
